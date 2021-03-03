@@ -1,0 +1,2775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezbuyviet</title>
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/slick/slick.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner-top">
+            <a href="#"><img src="assets/images/banner-top.jpg" alt=""></a>
+        </div>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top--height flex justify-between item-center">
+                    <div class="logo">
+                        <a href="#"><img src="assets/images/logo.png" alt=""></a>
+                    </div>
+                    <form class="form-inline form-search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm">
+                        </div>
+                        <button type="submit" class="btn">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                    <div class="login-register flex item-center">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        <div class="login-register__model">
+                            <div class="login__form">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-login" data-toggle="modal" data-target="#register">
+                                    Đăng ký
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="register" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Form đăng ký</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Email address</label>
+                                                        <input type="email" class="form-control"
+                                                            aria-describedby="emailHelp" placeholder="Enter email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">User</label>
+                                                        <input type="text" class="form-control" placeholder="User">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Password</label>
+                                                        <input type="password" class="form-control"
+                                                            placeholder="Password">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Đăng ký</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login__form">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-login" data-toggle="modal" data-target="#login">
+                                    Đăng nhập
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="login" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Form đăng nhập</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">User</label>
+                                                        <input type="text" class="form-control" placeholder="User">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputPassword1">Password</label>
+                                                        <input type="password" class="form-control"
+                                                            placeholder="Password">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Đăng nhập</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-cart flex item-center">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        <button class="btn-cart">Giỏ hàng <br> 0 sản phẩm</button>
+                    </div>
+                    <button class="btn-menu-mobile"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <div class="dropdownMenuMain dropdown borderRight">
+                            <button class="btn btn-MenuMain">
+                                <img src="assets/images/Danhmuc.png" alt="">
+                                Danh mục sản phẩm
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-mn">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="dropdownMenuMain dropdown borderRight">
+                            <button class="btn btn-MenuMain">
+                                <img src="assets/images/Doitac.png" alt="">
+                                Đối tác
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-mn">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="dropdownMenuMain dropdown borderRight">
+                            <button class="btn btn-MenuMain">
+                                <img src="assets/images/Tintuc.png" alt="">
+                                Tin tức
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-mn">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="dropdownMenuMain dropdown">
+                            <button class="btn btn-MenuMain">
+                                <img src="assets/images/Rewards.png" alt="">
+                                Rewards
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-mn">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrap-content">
+        <section class="slider">
+            <div class="slider-main slider">
+                <div>
+                    <img src="assets/images/slide1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="assets/images/slide2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="category flex item-center justify-between">
+                <div class="category__item text-center">
+                    <a href="#">
+                        <img src="assets/images/icon-cat1.png" alt="">
+                        <h2>EZ Mall</h2>
+                    </a>
+                </div>
+                <div class="category__item text-center">
+                    <a href="#">
+                        <img src="assets/images/icon-cat2.png" alt="">
+                        <h2>Hot Deals</h2>
+                    </a>
+                </div>
+                <div class="category__item text-center">
+                    <a href="#">
+                        <img src="assets/images/icon-cat3.png" alt="">
+                        <h2>Best Sellers</h2>
+                    </a>
+                </div>
+                <div class="category__item text-center">
+                    <a href="#">
+                        <img src="assets/images/icon-cat4.png" alt="">
+                        <h2>Xu Hướng</h2>
+                    </a>
+                </div>
+                <div class="category__item text-center">
+                    <a href="#">
+                        <img src="assets/images/icon-cat5.png" alt="">
+                        <h2>Hàng quốc tế</h2>
+                    </a>
+                </div>
+                <div class="category__item text-center">
+                    <a href="#">
+                        <img src="assets/images/icon-cat6.png" alt="">
+                        <h2>Voucher hot</h2>
+                    </a>
+                </div>
+                <div class="category__item text-center">
+                    <a href="#">
+                        <img src="assets/images/icon-cat7.png" alt="">
+                        <h2>Track Order</h2>
+                    </a>
+                </div>
+                <div class="category__item text-center">
+                    <a href="#">
+                        <img src="assets/images/icon-cat8.png" alt="">
+                        <h2>Prime</h2>
+                    </a>
+                </div>
+                <div class="category__item text-center">
+                    <a href="#">
+                        <img src="assets/images/icon-cat9.png" alt="">
+                        <h2>CKC LAND</h2>
+                    </a>
+                </div>
+                <div class="category__item text-center">
+                    <a href="#">
+                        <img src="assets/images/icon-cat10.png" alt="">
+                        <h2>Cộng đồng</h2>
+                    </a>
+                </div>
+            </section>
+            <section class="block">
+                <div class="block__title border-bottom flex justify-between">
+                    <h3>Welcome Cashback</h3>
+                    <a class="view-all" href="#">Xem tất cả</a>
+                </div>
+                <div class="block__content">
+                    <div class="slider-2 slider">
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="assets/images/xiaomir7-1.jpg" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="assets/images/xiaomir7-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="assets/images/xiaomir7-1.jpg" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="assets/images/xiaomir7-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block">
+                <div class="flex item-center block__title border-bottom justify-between">
+                    <div class="flex item-center">
+                        <img class="icon-title" src="assets/images/icon-block.png" alt="">
+                        <h3>flash sales</h3>
+                        <span class="countdown">
+                            <span class="day square"></span> <span> : </span>
+                            <span class="hours square"></span> <span> : </span>
+                            <span class="minutes square"></span> <span> : </span>
+                            <span class="seconds square"></span>
+                        </span>
+                    </div>
+                    <a class="view-all" href="#">Xem tất cả</a>
+                </div>
+                <div class="block__content">
+                    <div class="slider-2 slider">
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link border-bottom" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product1.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                        <div class="product__shop flex justify-between item-center">
+                                            <div class="name-shop">Min Name</div>
+                                            <div><img src="assets/images/beseller.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link border-bottom" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product2.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                        <div class="product__shop flex justify-between item-center">
+                                            <div class="name-shop">Body Shop</div>
+                                            <div><img src="assets/images/freeshipping.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link border-bottom" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product3.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                        <div class="product__shop flex justify-between item-center">
+                                            <div class="name-shop1">Ezmall</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link border-bottom" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product4.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                        <div class="product__shop flex item-center">
+                                            <div class="img-shop"><img src="assets/images/icon-product.jpg" alt="">
+                                            </div>
+                                            <div class="name-shop">Minh Ngoc</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link border-bottom" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product5.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                        <div class="product__shop flex justify-between item-center">
+                                            <div class="name-shop">Manga</div>
+                                            <div><img src="assets/images/beseller.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link border-bottom" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product6.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                        <div class="product__shop flex item-center">
+                                            <div class="img-shop"><img src="assets/images/icon-product.jpg" alt="">
+                                            </div>
+                                            <div class="name-shop">An Thien</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link border-bottom" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product1.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                        <div class="product__shop flex justify-between item-center">
+                                            <div class="name-shop">Min Name</div>
+                                            <div><img src="assets/images/beseller.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link border-bottom" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product2.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                        <div class="product__shop flex justify-between item-center">
+                                            <div class="name-shop">Body Shop</div>
+                                            <div><img src="assets/images/freeshipping.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link border-bottom" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product3.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                        <div class="product__shop flex justify-between item-center">
+                                            <div class="name-shop1">Ezmall</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link border-bottom" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product4.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                        <div class="product__shop flex item-center">
+                                            <div class="img-shop"><img src="assets/images/icon-product.jpg" alt="">
+                                            </div>
+                                            <div class="name-shop">Minh Ngoc</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link border-bottom" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product5.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                        <div class="product__shop flex justify-between item-center">
+                                            <div class="name-shop">Manga</div>
+                                            <div><img src="assets/images/beseller.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link border-bottom" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product6.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                        <div class="product__shop flex item-center">
+                                            <div class="img-shop"><img src="assets/images/icon-product.jpg" alt="">
+                                            </div>
+                                            <div class="name-shop">An Thien</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block">
+                <div class="block__title border-bottom flex justify-between">
+                    <h3>Thương hiệu nổi bậc</h3>
+                    <a class="view-all" href="#">Xem tất cả</a>
+                </div>
+                <div class="block__content space-20">
+                    <div class="slider-2 slider">
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-xl-3 col-md-6 col-12">
+                                    <div class="brand bg-brand1">
+                                        <div class="brand__product flex">
+                                            <a href="#"><img src="assets/images/product-small1.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small2.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small3.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <h2 class="brand__name">Accor Live Limitless</h2>
+                                    <div class="brand__cashback flex item-center"><img
+                                            src="assets/images/icon-cashback.png" alt=""> 3.0% Cashback</div>
+                                </div>
+                                <div class="col-xl-3 col-md-6 col-12">
+                                    <div class="brand bg-brand2">
+                                        <div class="brand__product flex">
+                                            <a href="#"><img src="assets/images/product-small4.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small5.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small6.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <h2 class="brand__name">Accor Live Limitless</h2>
+                                    <div class="brand__cashback flex item-center"><img
+                                            src="assets/images/icon-cashback.png" alt=""> 3.0% Cashback</div>
+                                </div>
+                                <div class="col-xl-3 col-md-6 col-12">
+                                    <div class="brand bg-brand3">
+                                        <div class="brand__product flex">
+                                            <a href="#"><img src="assets/images/product-small7.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small8.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small9.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <h2 class="brand__name">Accor Live Limitless</h2>
+                                    <div class="brand__cashback flex item-center"><img
+                                            src="assets/images/icon-cashback.png" alt=""> 3.0% Cashback</div>
+                                </div>
+                                <div class="col-xl-3 col-md-6 col-12">
+                                    <div class="brand bg-brand4">
+                                        <div class="brand__product flex">
+                                            <a href="#"><img src="assets/images/product-small10.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small11.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small12.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <h2 class="brand__name">Accor Live Limitless</h2>
+                                    <div class="brand__cashback flex item-center"><img
+                                            src="assets/images/icon-cashback.png" alt=""> 3.0% Cashback</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-xl-3 col-md-6 col-12">
+                                    <div class="brand bg-brand1">
+                                        <div class="brand__product flex">
+                                            <a href="#"><img src="assets/images/product-small1.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small2.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small3.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <h2 class="brand__name">Accor Live Limitless</h2>
+                                    <div class="brand__cashback flex item-center"><img
+                                            src="assets/images/icon-cashback.png" alt=""> 3.0% Cashback</div>
+                                </div>
+                                <div class="col-xl-3 col-md-6 col-12">
+                                    <div class="brand bg-brand2">
+                                        <div class="brand__product flex">
+                                            <a href="#"><img src="assets/images/product-small4.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small5.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small6.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <h2 class="brand__name">Accor Live Limitless</h2>
+                                    <div class="brand__cashback flex item-center"><img
+                                            src="assets/images/icon-cashback.png" alt=""> 3.0% Cashback</div>
+                                </div>
+                                <div class="col-xl-3 col-md-6 col-12">
+                                    <div class="brand bg-brand3">
+                                        <div class="brand__product flex">
+                                            <a href="#"><img src="assets/images/product-small7.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small8.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small9.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <h2 class="brand__name">Accor Live Limitless</h2>
+                                    <div class="brand__cashback flex item-center"><img
+                                            src="assets/images/icon-cashback.png" alt=""> 3.0% Cashback</div>
+                                </div>
+                                <div class="col-xl-3 col-md-6 col-12">
+                                    <div class="brand bg-brand4">
+                                        <div class="brand__product flex">
+                                            <a href="#"><img src="assets/images/product-small10.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small11.jpg" alt=""></a>
+                                            <a href="#"><img src="assets/images/product-small12.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <h2 class="brand__name">Accor Live Limitless</h2>
+                                    <div class="brand__cashback flex item-center"><img
+                                            src="assets/images/icon-cashback.png" alt=""> 3.0% Cashback</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block">
+                <div class="block__title border-bottom flex justify-between">
+                    <h3>Các sản phẩm bán chạy</h3>
+                    <a class="view-all" href="#">Xem tất cả</a>
+                </div>
+                <div class="block__content space-20">
+                    <ul class="nav nav-tabs flex justify-between nav-bestsaler" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab"
+                                aria-controls="home" aria-selected="true">Mỹ phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab"
+                                aria-controls="profile" aria-selected="false">Thời trang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab"
+                                aria-controls="contact" aria-selected="false">Đồ uống</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab"
+                                aria-controls="contact" aria-selected="false">Phụ kiện</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab5-tab" data-toggle="tab" href="#tab5" role="tab"
+                                aria-controls="contact" aria-selected="false">Đồng hồ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab6-tab" data-toggle="tab" href="#tab6" role="tab"
+                                aria-controls="contact" aria-selected="false">Công nghệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab7-tab" data-toggle="tab" href="#tab7" role="tab"
+                                aria-controls="contact" aria-selected="false">Nội thất</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab8-tab" data-toggle="tab" href="#tab8" role="tab"
+                                aria-controls="contact" aria-selected="false">Điện tử</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab9-tab" data-toggle="tab" href="#tab9" role="tab"
+                                aria-controls="contact" aria-selected="false">Sức khỏe</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product7.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Decor trang trí</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product8.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Dược Mỹ Phẩm Đức</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">780,000đ</span>
+                                                <span class="price-old">900,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product10.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Electronic</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">540,000đ</span>
+                                                <span class="price-old">740,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product9.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thực phẩm sức khỏe</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">240,000đ</span>
+                                                <span class="price-old">320,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product5.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">200,000đ</span>
+                                                <span class="price-old">340,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product6.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Phụ kiện thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">140,000đ</span>
+                                                <span class="price-old">200,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product7.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Decor trang trí</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product8.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Dược Mỹ Phẩm Đức</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">780,000đ</span>
+                                                <span class="price-old">900,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product10.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Electronic</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">540,000đ</span>
+                                                <span class="price-old">740,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product9.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thực phẩm sức khỏe</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">240,000đ</span>
+                                                <span class="price-old">320,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product5.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">200,000đ</span>
+                                                <span class="price-old">340,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product6.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Phụ kiện thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">140,000đ</span>
+                                                <span class="price-old">200,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product7.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Decor trang trí</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product8.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Dược Mỹ Phẩm Đức</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">780,000đ</span>
+                                                <span class="price-old">900,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product10.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Electronic</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">540,000đ</span>
+                                                <span class="price-old">740,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product9.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thực phẩm sức khỏe</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">240,000đ</span>
+                                                <span class="price-old">320,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product5.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">200,000đ</span>
+                                                <span class="price-old">340,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product6.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Phụ kiện thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">140,000đ</span>
+                                                <span class="price-old">200,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product7.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Decor trang trí</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product8.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Dược Mỹ Phẩm Đức</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">780,000đ</span>
+                                                <span class="price-old">900,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product10.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Electronic</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">540,000đ</span>
+                                                <span class="price-old">740,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product9.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thực phẩm sức khỏe</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">240,000đ</span>
+                                                <span class="price-old">320,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product5.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">200,000đ</span>
+                                                <span class="price-old">340,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product6.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Phụ kiện thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">140,000đ</span>
+                                                <span class="price-old">200,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product7.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Decor trang trí</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product8.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Dược Mỹ Phẩm Đức</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">780,000đ</span>
+                                                <span class="price-old">900,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product10.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Electronic</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">540,000đ</span>
+                                                <span class="price-old">740,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product9.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thực phẩm sức khỏe</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">240,000đ</span>
+                                                <span class="price-old">320,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product5.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">200,000đ</span>
+                                                <span class="price-old">340,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product6.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Phụ kiện thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">140,000đ</span>
+                                                <span class="price-old">200,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product7.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Decor trang trí</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product8.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Dược Mỹ Phẩm Đức</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">780,000đ</span>
+                                                <span class="price-old">900,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product10.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Electronic</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">540,000đ</span>
+                                                <span class="price-old">740,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product9.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thực phẩm sức khỏe</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">240,000đ</span>
+                                                <span class="price-old">320,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product5.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">200,000đ</span>
+                                                <span class="price-old">340,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product6.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Phụ kiện thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">140,000đ</span>
+                                                <span class="price-old">200,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab7" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product7.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Decor trang trí</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product8.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Dược Mỹ Phẩm Đức</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">780,000đ</span>
+                                                <span class="price-old">900,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product10.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Electronic</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">540,000đ</span>
+                                                <span class="price-old">740,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product9.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thực phẩm sức khỏe</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">240,000đ</span>
+                                                <span class="price-old">320,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product5.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">200,000đ</span>
+                                                <span class="price-old">340,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product6.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Phụ kiện thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">140,000đ</span>
+                                                <span class="price-old">200,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab8" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product7.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Decor trang trí</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product8.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Dược Mỹ Phẩm Đức</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">780,000đ</span>
+                                                <span class="price-old">900,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product10.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Electronic</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">540,000đ</span>
+                                                <span class="price-old">740,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product9.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thực phẩm sức khỏe</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">240,000đ</span>
+                                                <span class="price-old">320,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product5.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">200,000đ</span>
+                                                <span class="price-old">340,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product6.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Phụ kiện thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">140,000đ</span>
+                                                <span class="price-old">200,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab9" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product7.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Decor trang trí</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">350,000đ</span>
+                                                <span class="price-old">700,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product8.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Dược Mỹ Phẩm Đức</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">780,000đ</span>
+                                                <span class="price-old">900,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product10.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Electronic</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">540,000đ</span>
+                                                <span class="price-old">740,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product9.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thực phẩm sức khỏe</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">240,000đ</span>
+                                                <span class="price-old">320,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-right">Sale</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product5.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">200,000đ</span>
+                                                <span class="price-old">340,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                    <div class="product">
+                                        <div class="sale-left">3.5%</div>
+                                        <a class="product__link" href="#">
+                                            <div class="product__img">
+                                                <img src="assets/images/product6.jpg" alt="">
+                                            </div>
+                                            <h2 class="product__name1">Phụ kiện thời trang</h2>
+                                            <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                            <div class="product__star flex item-center">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span class="number-star">(230)</span>
+                                            </div>
+                                            <div class="product__prices flex item-center">
+                                                <span class="price-new">140,000đ</span>
+                                                <span class="price-old">200,000</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block__banner">
+                <a href="#">
+                    <img src="assets/images/banner1.jpg" alt="">
+                </a>
+            </section>
+            <section class="block">
+                <div class="block__title border-bottom flex justify-between">
+                    <h3>Các sản phẩm nổi bậc</h3>
+                    <a class="view-all" href="#">Xem tất cả</a>
+                </div>
+                <div class="block__content">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="sale-right">Sale</div>
+                                <a class="product__link" href="#">
+                                    <div class="product__img">
+                                        <img src="assets/images/product1.jpg" alt="">
+                                    </div>
+                                    <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                    <div class="product__star flex item-center">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="number-star">(230)</span>
+                                    </div>
+                                    <div class="product__prices flex item-center">
+                                        <span class="price-new">350,000đ</span>
+                                        <span class="price-old">700,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="sale-right">Sale</div>
+                                <a class="product__link" href="#">
+                                    <div class="product__img">
+                                        <img src="assets/images/product2.jpg" alt="">
+                                    </div>
+                                    <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                    <div class="product__star flex item-center">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="number-star">(230)</span>
+                                    </div>
+                                    <div class="product__prices flex item-center">
+                                        <span class="price-new">350,000đ</span>
+                                        <span class="price-old">700,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="sale-left">3.5%</div>
+                                <div class="sale-right">Sale</div>
+                                <a class="product__link" href="#">
+                                    <div class="product__img">
+                                        <img src="assets/images/product3.jpg" alt="">
+                                    </div>
+                                    <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                    <div class="product__star flex item-center">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="number-star">(230)</span>
+                                    </div>
+                                    <div class="product__prices flex item-center">
+                                        <span class="price-new">350,000đ</span>
+                                        <span class="price-old">700,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="sale-right">Sale</div>
+                                <a class="product__link" href="#">
+                                    <div class="product__img">
+                                        <img src="assets/images/product4.jpg" alt="">
+                                    </div>
+                                    <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                    <div class="product__star flex item-center">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="number-star">(230)</span>
+                                    </div>
+                                    <div class="product__prices flex item-center">
+                                        <span class="price-new">350,000đ</span>
+                                        <span class="price-old">700,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="sale-right">Sale</div>
+                                <a class="product__link" href="#">
+                                    <div class="product__img">
+                                        <img src="assets/images/product5.jpg" alt="">
+                                    </div>
+                                    <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                    <div class="product__star flex item-center">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="number-star">(230)</span>
+                                    </div>
+                                    <div class="product__prices flex item-center">
+                                        <span class="price-new">350,000đ</span>
+                                        <span class="price-old">700,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="sale-left">3.5%</div>
+                                <div class="sale-right">Sale</div>
+                                <a class="product__link" href="#">
+                                    <div class="product__img">
+                                        <img src="assets/images/product6.jpg" alt="">
+                                    </div>
+                                    <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                    <div class="product__star flex item-center">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="number-star">(230)</span>
+                                    </div>
+                                    <div class="product__prices flex item-center">
+                                        <span class="price-new">350,000đ</span>
+                                        <span class="price-old">700,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="sale-left">3.5%</div>
+                                <a class="product__link" href="#">
+                                    <div class="product__img">
+                                        <img src="assets/images/product11.jpg" alt="">
+                                    </div>
+                                    <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                    <div class="product__star flex item-center">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="number-star">(230)</span>
+                                    </div>
+                                    <div class="product__prices flex item-center">
+                                        <span class="price-new">350,000đ</span>
+                                        <span class="price-old">700,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="sale-right">Sale</div>
+                                <a class="product__link" href="#">
+                                    <div class="product__img">
+                                        <img src="assets/images/product12.jpg" alt="">
+                                    </div>
+                                    <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                    <div class="product__star flex item-center">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="number-star">(230)</span>
+                                    </div>
+                                    <div class="product__prices flex item-center">
+                                        <span class="price-new">350,000đ</span>
+                                        <span class="price-old">700,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <a class="product__link" href="#">
+                                    <div class="product__img">
+                                        <img src="assets/images/product13.jpg" alt="">
+                                    </div>
+                                    <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                    <div class="product__star flex item-center">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="number-star">(230)</span>
+                                    </div>
+                                    <div class="product__prices flex item-center">
+                                        <span class="price-new">350,000đ</span>
+                                        <span class="price-old">700,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="sale-right">Sale</div>
+                                <a class="product__link" href="#">
+                                    <div class="product__img">
+                                        <img src="assets/images/product14.jpg" alt="">
+                                    </div>
+                                    <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                    <div class="product__star flex item-center">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="number-star">(230)</span>
+                                    </div>
+                                    <div class="product__prices flex item-center">
+                                        <span class="price-new">350,000đ</span>
+                                        <span class="price-old">700,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <a class="product__link" href="#">
+                                    <div class="product__img">
+                                        <img src="assets/images/product15.jpg" alt="">
+                                    </div>
+                                    <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                    <div class="product__star flex item-center">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="number-star">(230)</span>
+                                    </div>
+                                    <div class="product__prices flex item-center">
+                                        <span class="price-new">350,000đ</span>
+                                        <span class="price-old">700,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="sale-left">3.5%</div>
+                                <a class="product__link" href="#">
+                                    <div class="product__img">
+                                        <img src="assets/images/product16.jpg" alt="">
+                                    </div>
+                                    <h2 class="product__name">Kem dưỡng da siêu săn chắc</h2>
+                                    <div class="product__star flex item-center">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <span class="number-star">(230)</span>
+                                    </div>
+                                    <div class="product__prices flex item-center">
+                                        <span class="price-new">350,000đ</span>
+                                        <span class="price-old">700,000</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block__banner">
+                <a href="#">
+                    <img src="assets/images/banner2.jpg" alt="">
+                </a>
+            </section>
+            <section class="block block__brands">
+                <div class="block__title border-bottom flex justify-between">
+                    <h3>Các thương hiệu hàng đầu</h3>
+                    <a class="view-all" href="#">Xem tất cả</a>
+                </div>
+                <div class="block__content space-20">
+                    <ul class="brands flex">
+                        <li class="brand__item">
+                            <img src="assets/images/logo1.jpg" alt="">
+                        </li>
+                        <li class="brand__item">
+                            <img src="assets/images/logo2.jpg" alt="">
+                        </li>
+                        <li class="brand__item">
+                            <img src="assets/images/logo3.jpg" alt="">
+                        </li>
+                        <li class="brand__item">
+                            <img src="assets/images/logo4.jpg" alt="">
+                        </li>
+                        <li class="brand__item">
+                            <img src="assets/images/logo5.jpg" alt="">
+                        </li>
+                        <li class="brand__item">
+                            <img src="assets/images/logo6.jpg" alt="">
+                        </li>
+                        <li class="brand__item">
+                            <img src="assets/images/logo7.jpg" alt="">
+                        </li>
+                        <li class="brand__item">
+                            <img src="assets/images/logo3.jpg" alt="">
+                        </li>
+                        <li class="brand__item">
+                            <img src="assets/images/logo6.jpg" alt="">
+                        </li>
+                        <li class="brand__item">
+                            <img src="assets/images/logo1.jpg" alt="">
+                        </li>
+                        <li class="brand__item">
+                            <img src="assets/images/logo7.jpg" alt="">
+                        </li>
+                        <li class="brand__item">
+                            <img src="assets/images/logo8.jpg" alt="">
+                        </li>
+                        <li class="brand__item">
+                            <img src="assets/images/logo2.jpg" alt="">
+                        </li>
+                        <li class="brand__item">
+                            <img src="assets/images/logo4.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="block">
+                <div class="block__title border-bottom flex justify-between">
+                    <h3>EZ MALL</h3>
+                    <a class="view-all" href="#">Xem tất cả</a>
+                </div>
+                <div class="block__content">
+                    <div class="slider-2 slider">
+                        <div class="slider-item  space-20">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="#" class="blog-item">
+                                        <div class="blog-item__image">
+                                          <img src="assets/images/img1.jpg" alt="">
+                                        </div>
+                                        <h2 class="blog-item__title">EZ Mall Thái Nguyên</h2>
+                                        <div class="blog-item__address">Tòa nhà TNR, số 54A, Nguyễn Chí Thanh, Hà Nội</div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#" class="blog-item">
+                                        <div class="blog-item__image">
+                                          <img src="assets/images/img2.jpg" alt="">
+                                        </div>
+                                        <h2 class="blog-item__title">EZ Mall Long Biên</h2>
+                                        <div class="blog-item__address">Tòa nhà TNR, số 54A, Nguyễn Chí Thanh, Hà Nội</div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#" class="blog-item">
+                                        <div class="blog-item__image">
+                                          <img src="assets/images/img3.jpg" alt="">
+                                        </div>
+                                        <h2 class="blog-item__title">EZ Mall Hà Đông</h2>
+                                        <div class="blog-item__address">Tòa nhà TNR, số 54A, Nguyễn Chí Thanh, Hà Nội</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item  space-20">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="#" class="blog-item">
+                                        <div class="blog-item__image">
+                                          <img src="assets/images/img1.jpg" alt="">
+                                        </div>
+                                        <h2 class="blog-item__title">EZ Mall Thái Nguyên</h2>
+                                        <div class="blog-item__address">Tòa nhà TNR, số 54A, Nguyễn Chí Thanh, Hà Nội</div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#" class="blog-item">
+                                        <div class="blog-item__image">
+                                          <img src="assets/images/img2.jpg" alt="">
+                                        </div>
+                                        <h2 class="blog-item__title">EZ Mall Long Biên</h2>
+                                        <div class="blog-item__address">Tòa nhà TNR, số 54A, Nguyễn Chí Thanh, Hà Nội</div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#" class="blog-item">
+                                        <div class="blog-item__image">
+                                          <img src="assets/images/img3.jpg" alt="">
+                                        </div>
+                                        <h2 class="blog-item__title">EZ Mall Hà Đông</h2>
+                                        <div class="blog-item__address">Tòa nhà TNR, số 54A, Nguyễn Chí Thanh, Hà Nội</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="affilate-ezbuyviet">
+            <div class="title text-center">Kinh doanh cùng Ezbuyviet</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="affilate-item text-center">
+                            <div class="img"><img src="assets/images/item-affilate1.png" alt=""></div>
+                            <div class="affilate-item__content">
+                                <div class="affilate-item__title">Sell</div>
+                                <div class="affilate-item__short-content">
+                                    Bắt đầu kinh doanh hiệu quả cùng Ezbuyviet
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="affilate-item text-center">
+                            <div class="img"><img src="assets/images/item-affilate2.png" alt=""></div>
+                            <div class="affilate-item__content">
+                                <div class="affilate-item__title">Kiếm tiền-Affilate ezbuyviet</div>
+                                <div class="affilate-item__short-content">
+                                    Thật dễ dàng và miễn phí khi tham gia kiếm tiền không giới hạn cùng Ezbuyviet
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="affilate-item text-center">
+                            <div class="img"><img src="assets/images/item-affilate3.png" alt=""></div>
+                            <div class="affilate-item__content">
+                                <div class="affilate-item__title">Cashback</div>
+                                <div class="affilate-item__short-content">
+                                    Mua hàng và nhận cashback không giới hạn tại Ezbuyviet
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="social-newletter flex">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="socials flex item-center">
+                                    <span class="socials__text"> Follow Social</span>
+                                    <a href="#" target="_blank" class="socials__icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#" target="_blank" class="socials__icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#" target="_blank" class="socials__icon"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                                    <a href="#" target="_blank" class="socials__icon"><i class="fa fa-pinterest" aria-hidden="true"></i></i></a>
+                                    <a href="#" target="_blank" class="socials__icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="newletter flex item-center">
+                                    <div class="newletter__text"> Sign Up For Newsletter </div>
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                          <input type="text" class="form-control newletter__input" placeholder="Enter your mail">
+                                        </div>
+                                        <button type="submit" class="btn newletter__signin"> SIGN IN</button>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="visit-blog flex justify-between border-bottom">
+                        <div class="visit-blog__item">
+                            <a href="#">
+                                <img src="assets/images/blog1.jpg" alt="">
+                                <h2>Top 10 Natural Supplements to Optimize the Immune System</h2>
+                            </a>
+                        </div>
+                        <div class="visit-blog__item">
+                            <a href="#">
+                                <img src="assets/images/blog2.jpg" alt="">
+                                <h2>The Thymus Gland - The Master Control of the Immune System</h2>
+                            </a>
+                        </div>
+                        <div class="visit-blog__item">
+                            <a href="#">
+                                <img src="assets/images/blog3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="visit-blog__item">
+                            <a href="#">
+                                <img src="assets/images/blog4.jpg" alt="">
+                                <h2>Top 10 Natural Supplements to Optimize the Immune System</h2>
+                            </a>
+                        </div>
+                        <div class="visit-blog__item">
+                            <a href="#">
+                                <img src="assets/images/blog5.jpg" alt="">
+                                <h2>Top 10 Natural Supplements to Optimize the Immune System</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-footer border-bottom">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <h2 class="footer__title">About Exbuyviet</h2>
+                                <ul class="footer__col">
+                                    <li class="address">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Tầng 16, tòa nhà TNR, số 54A, Nguyễn Chí Thanh, Đống Đa, Hà Nội
+                                    </li>
+                                    <li class="address">
+                                        <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                        Tel: 0918 905 669669
+                                    </li>
+                                    <li class="address">
+                                        <i class="fa fa-fax" aria-hidden="true"></i>
+                                        Fax: 02-849-4962
+                                    </li>
+                                    <li class="address">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        E-mail: support@ezbuyviet.com
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h2 class="footer__title">Chính sách khách hàng</h2>
+                                <ul class="footer__list">
+                                    <li><a href="#">Trung tâm trợ giúp</a></li>
+                                    <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+                                    <li><a href="#">Hướng Dẫn Bán Hàng</a></li>
+                                    <li><a href="#">Thanh Toán</a></li>
+                                    <li><a href="#">Vận Chuyển</a></li>
+                                    <li><a href="#">Trả Hàng & Hoàn Tiền</a></li>
+                                    <li><a href="#">Chăm Sóc Khách Hàng</a></li>
+                                    <li><a href="#">Chính Sách Bảo Hành</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h2 class="footer__title">Về Ezbuyviet</h2>
+                                <ul class="footer__list">
+                                    <li><a href="#">Giới Thiệu Về EZBuy Việt Nam</a></li>
+                                    <li><a href="#">Tuyển Dụng</a></li>
+                                    <li><a href="#">Điều Khoản EZBuyViet</a></li>
+                                    <li><a href="#">Chính Sách Bảo Mật</a></li>
+                                    <li><a href="#">Chính Hãng</a></li>
+                                    <li><a href="#">Kênh Người Bán</a></li>
+                                    <li><a href="#">Flash Sales</a></li>
+                                    <li><a href="#">Chương Trình Tiếp Thị Liên Kết Shopee</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <h2 class="footer__title">Mobile app</h2>
+                                <div class="footer__apps flex item-center">
+                                    <a href="#" target="_blank"><img src="assets/images/maQR.jpg" alt=""></a>
+                                    <div>
+                                        <div><a href="#" target="_blank"><img src="assets/images/chplay.jpg" alt=""></a></div>
+                                        <div><a href="#" target="_blank"><img src="assets/images/IOS.jpg" alt=""></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-affilate">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <img src="assets/images/cart-bank.jpg" alt="">
+                            </div>
+                            <div class="col-lg-5 col-md-6">
+                                <div class="img-bct flex item-center">
+                                    <img src="assets/images/bocongthuong1.jpg" alt="">
+                                    <img src="assets/images/bocongthuong.jpg" alt="">
+                                    <img src="assets/images/dmca.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6">
+                                <div class="wrap-menu-language">
+                                    <div class="title-language">Ezbuyviet Southeast Asia</div>
+                                    <ul class="menu-language flex item-center">
+                                        <li><a href="#"><img src="assets/images/VN.png" alt=""></a></li>
+                                        <li><a href="#"><img src="assets/images/lao.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <div class="footer-bottom__title">
+                    @ 2020 - Bản quyền của ezbuyviet
+                </div>
+                <div class="footer-bottom__subtitle">
+                    Giấy chứng nhận kinh doanh số 087654321 do sở Kế hoạch và Đầu tư thành phố Hà Nội cấp ngày 06/01/2020 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
